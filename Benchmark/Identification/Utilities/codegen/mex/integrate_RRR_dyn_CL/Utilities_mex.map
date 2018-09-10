@@ -1,0 +1,17 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		integrate_RRR_dyn_CL;
+		emxEnsureCapacity_real_T;
+		emxEnsureCapacity_real_T1;
+		emxFree_real_T;
+		emxInit_real_T;
+		emxInit_real_T1;
+		integrate_RRR_dyn_CL_initialize;
+		integrate_RRR_dyn_CL_terminate;
+		integrate_RRR_dyn_CL_atexit;
+	local:
+		*;
+};

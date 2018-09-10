@@ -1,0 +1,16 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		torqueVector;
+		emxEnsureCapacity_real_T;
+		emxFree_real_T;
+		emxInit_real_T;
+		emxInit_real_T1;
+		torqueVector_initialize;
+		torqueVector_terminate;
+		torqueVector_atexit;
+	local:
+		*;
+};

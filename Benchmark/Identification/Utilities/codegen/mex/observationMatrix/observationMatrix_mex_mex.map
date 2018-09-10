@@ -1,0 +1,15 @@
+MEX {
+	global:
+		mexFunction;
+		mexfilerequiredapiversion;
+		emlrtMexFcnProperties;
+		observationMatrix;
+		emxEnsureCapacity_real_T;
+		emxFree_real_T;
+		emxInit_real_T;
+		observationMatrix_initialize;
+		observationMatrix_terminate;
+		observationMatrix_atexit;
+	local:
+		*;
+};
