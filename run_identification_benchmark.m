@@ -52,16 +52,17 @@ if isunix
                     prompt2 = 'Do you want to recompile mex files ? Y/N [Y]';
                     
                     while flag2==false
-                        decitionCompilation = input(prompt2,'s');
-                        if isempty(decitionCompilation)
-                            decitionCompilation = 'Y';
+                        decisionCompilation = input(prompt2,'s');
+                        if isempty(decisionCompilation)
+                            decisionCompilation = 'Y';
                         end
-                        if strcmp(decitionCompilation, 'Y')
+                        if strcmp(decisionCompilation, 'Y')
                             flag2=true;
                             % [torqueVector_mex observationMatrix_mex integrate_RRR_dyn_CL_mex ekf_opt_mex ukf_opt_mex srukf_opt_mex]
                             list = [1 1 1 1 1 1];
                             compileTime = recompileMex(list);
-                        elseif strcmp(decitionCompilation, 'N')
+                            codeImplementation = 'optim';
+                        elseif strcmp(decisionCompilation, 'N')
                             flag2=true;
                             disp('Switching to pure matlab computations (no mex).')
                             codeImplementation = 'classic';
